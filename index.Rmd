@@ -1,8 +1,8 @@
 ---
 title: "Natalie O'Shea"
 image: "images/oshea_headshot.JPG"
-color1: "#5A59A3"
-color2: "#C66060"
+color1: "#237abe"
+color2: "#f16f7a"
 angle: 130
 links:
   - label: GitHub
@@ -14,7 +14,7 @@ links:
   - label: Email
     url: "mailto:ms.natalieoshea@gmail.com"
 output:
-  postcards::jolla
+  postcards::onofre
 site: distill::distill_website
 ---
  

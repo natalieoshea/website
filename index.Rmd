@@ -1,0 +1,21 @@
+---
+title: "Natalie O'Shea"
+image: "images/oshea_headshot.JPG"
+color1: "#5A59A3"
+color2: "#C66060"
+angle: 130
+links:
+  - label: GitHub
+    url: "https://github.com/natalieoshea"
+  - label: Twitter
+    url: "https://twitter.com/_natalie_oshea"
+  - label: LinkedIn
+    url: "https://www.linkedin.com/in/natalie-oshea/"
+  - label: Email
+    url: "mailto:ms.natalieoshea@gmail.com"
+output:
+  postcards::jolla
+site: distill::distill_website
+---
+ 
+Natalie O’Shea is a researcher and data visualization specialist with a passion for equity, accessibility, and human-centered design. She has worked in academic, government, and industry contexts and brings her passion for using data to help drive more equitable outcomes into all of these arenas.

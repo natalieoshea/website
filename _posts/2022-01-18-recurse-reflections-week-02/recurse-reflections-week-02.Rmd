@@ -31,6 +31,8 @@ Although MLK Day is technically this week, I'm considering it here as the end of
 
 Although we were covering a lot of heavy topics on the tour, we celebrated getting to spend some quality in-person time together by warming up with some delicious dumplings and noodles at Noodle Village in Chinatown (HIGHLY recommend stopping there if you're ever in the area).
 
-```{r, echo=FALSE, results='markup'} 
-knitr::include_graphics(here::here("images/RecurseCenter/noodles.png"))
+```{r, echo=FALSE}
+img <- png::readPNG(here::here("images/RecurseCenter/noodles.png"))
+grid::grid.raster(img)
 ```
+

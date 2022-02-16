@@ -1,0 +1,47 @@
+---
+title: "Recurse Reflections: The End (or Beginning?)"
+description: |
+  Allowing myself to become a dramatically better programmer by figuring out the rest of my life outside of programming.
+author:
+  - name: Natalie O'Shea
+    url: {}
+date: 2022-02-16
+output:
+  distill::distill_article:
+    self_contained: false
+---
+
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+Wow... life is a-changing far faster than I could ever imagine. I'm feeling a lot of emotions (to put it mildly) writing this last Recurse Reflections post. I certainly did not accomplish all the technical work that I had set out to do during my time at RC but many, arguably far more important, things were being worked through during this time. Isn't it wild the way life can feel stagnant for years and then jump into hyper-speed in the blink of an eye? 
+
+Somewhat frustratingly just as I was finding my groove at the retreat (nice balance of solo work and pairing and a good mix of JavaScript play and R deep-dives), I entered the final stages of several job interviews and ended up having to make some incredibly difficult life decisions within a short period of time. It's been exhilarating, stressful, joyful, heartbreaking... you name it, I'm feeling it all. There's a reason why they caution you to put off interviewing during your batch time if possible, but as an R programmer that really wants to continue working in R my opportunities are fewer and far between than your classic software engineer so I needed to strike while the iron was hot. All that being said, I have two big pieces of news to share coming out of this retreat:
+
+  1. I accepted an offer to join the team at [BetterUp](https://www.betterup.com/) as an analytics consultant! I am overjoyed about this opportunity to apply my data skills in an area that aligns so well with my core values of belonging and equity. Not to mention, it is a very R-centric company so I'll be joining a whole team of R nerds which is an absolute dream!
+  2. My husband and I decided that it's time to leave our beloved NYC and move closer to both of our families, so we'll be moving to Chicago at the beginning of April. There's a ton to be excited about with this new move, but I'm also really heartbroken to say goodbye to this time in our lives. Suffice it to say that I've been crying a lot lately... at the bodega, the laundromat, on the 7 train. Everything is beautiful and sad right now and I'm just... tender. Very tender. We're renting for a year to see how it goes, and as my husband keeps reminding me, if we've been Stockholm-ed beyond repair we can always return. But don't dare say my best friend's name or I WILL have an emotional breakdown.
+  
+![](https://media.giphy.com/media/NUPDmorpTnZF7ZyYaE/giphy.gif)
+  
+## Parting Thoughts
+
+Coming into the Recurse Center, I really thought I would be much more involved in the community and working with people a lot. Interestingly, this retreat ended up being much more introspective for me which goes against my generally gregarious nature but was honestly exactly what I needed at this moment. Thankfully, the RC motto is "Never Graduate" and they welcome alumni involvement long after your batch ends, so I anticipate continuing to pop in and see what everyone is working on and share what I'm working on. 
+
+Things I did during the retreat:
+
+  - Completed a golem refactor of my public-facing [NYC Census 2020 Shiny app](https://github.com/natalieoshea/nyccensus/tree/golem_refactor). I still haven't quite wrapped up this project... I'm working on adding some additional functionality and then want to add more custom styling with CSS.
+  - Put together a network analysis of campaign finance data from the [NYC Open Data Portal](https://data.cityofnewyork.us/City-Government/2021-Campaign-Contributions/rjkp-yttg). I'll be co-teaching a workshop on this at the upcoming [NYC Open Data Week](https://www.open-data.nyc/) with another member of the [DSxD](http://datasciencebydesign.org/) community, [Millie Olivia Symns](https://twitter.com/millieosymns).
+  - Did a [small pair-programming project](https://github.com/natalieoshea/popMarket) with fellow Recurser, [Daniel Gale-Rosen](https://github.com/dangrous), to explore some Spotify data and share the joys of Shiny <3
+  - [Learned a bit about APIs](https://cran.r-project.org/web/packages/httr/vignettes/api-packages.html) before ultimately abandoning an API wrapper package project. I'm glad that I learned more about this, but I also learned that if there's not a large visual component to my work I struggle with maintaining motivation (that's when I switched gears to the golem refactor project).
+  - Read [R Packages](https://r-pkgs.org/), [Engineering Production-Grade Shiny Apps](https://engineering-shiny.org/), and [Handbook of Graphs and Networks in People Analytics](https://ona-book.org/). I'm still hoping to tackle [Javascript for Data Science](https://js4ds.org/) but didn't quite get to it.
+  - Did a good amount of creative coding in `p5.js`, including finally finishing up some #RecreationThursday prompts I missed.
+  - Last but not least, got a new job, did a lot of soul searching, and made a lot of really tough life decisions.
+  
+Overall, if I could do it all over again I wouldn't have put so much pressure on myself to accomplish a ton of projects. I think the happiest, most engaged folks at the retreat came in with few intentions other than exploring and learning from others. 6 weeks goes by fast and unless your project is extremely well-scoped and defined, you might find it difficult to accomplish while still taking advantage of the social aspect of RC. I'm so grateful to have had this opportunity and I can 100% see myself doing another batch (next time a full 12-week batch!) at some point in my career. For now, I'm going to enjoy this little bit of time I have before starting my new role by spending quality time with friends and family before we ship off to our next adventure!
+
+```{r, echo=FALSE, fig.alt="Recurse Center Logo"}
+img <- png::readPNG(here::here("images/RecurseCenter/rc_logo.png"))
+grid::grid.raster(img)
+```

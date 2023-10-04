@@ -1,0 +1,22 @@
+project:
+  type: website
+  output-dir: docs
+  
+website:
+  navbar:
+    background: primary
+    search: true
+    left:
+      - text: "About"
+        file: index.qmd
+      - text: "Resume"
+        file: resume.qmd
+      - text: "Blog"
+        file: blog.qmd
+format:
+  html:
+    theme: minty
+    css: styles.css
+
+editor: visual
+

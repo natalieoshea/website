@@ -1,0 +1,497 @@
+site_name,county,latitude,longitude
+NYC Health + Hospitals/Lincoln,Bronx,40.8161,-73.9248
+"NYC Health + Hospitals/Gotham Health, Morrisania",Bronx,40.8363,-73.9202
+"NYC Health + Hospitals/Gotham Health, Cumberland",Kings,40.6951,-73.9765
+NYC Health + Hospitals/Queens,Queens,40.7172,-73.8035
+Morris Park Urgent Care,Bronx,40.8489,-73.8549
+"NYC Health + Hospitals/Gotham Health, Belvis",Bronx,40.8101,-73.9157
+NYC Health + Hospitals/Kings County,Kings,40.6569,-73.9447
+NYC Health + Hospitals/Woodhull,Kings,40.6997,-73.9425
+NYC Health + Hospitals/Coney Island,Kings,40.5856,-73.9649
+"NYC Health + Hospitals/Gotham Health, East New York",Kings,40.6717,-73.8952
+NYC Health + Hospitals/Harlem,New York,40.8142,-73.9398
+NYC Health + Hospitals/Metropolitan,New York,40.7852,-73.945
+"NYC Health + Hospitals/Gotham Health, Gouverneur",New York,40.713,-73.9877
+ProHealth Urgent Care - Marine Park,Kings,40.6084,-73.9233
+ProHealth Urgent Care - Bulls Head,Richmond,40.6071,-74.1612
+ProHEALTH Urgent Care - Gramercy Park,New York,40.7383,-73.9832
+Medrite Urgent Care- Midtown East,New York,40.7542,-73.9694
+Bronx Co-op City Bay Plaza Shopping Center,Bronx,40.8682,-73.8249
+ProHEALTH Urgent Care of Glen Oaks,Queens,40.7471,-73.7124
+ProHEALTH Urgent Care - Little Neck,Queens,40.7653,-73.7255
+GoHealth Urgent Care Center - Bayside,Queens,40.7631,-73.7703
+ProHEALTH Urgent Care of College Point,Queens,40.7865,-73.8362
+ProHEALTH Urgent Care - Howard Beach,Queens,40.6493,-73.8378
+GoHealth Urgent Care Center - Forest Hills,Queens,40.7257,-73.8504
+GoHealth Urgent Care Center - Lefrak City,Queens,40.7372,-73.8597
+GoHealth Urgent Care Center - Ridgewood,Queens,40.7002,-73.9083
+GoHealth Urgent Care Center - Astoria,Queens,40.7598,-73.9203
+ProHEALTH Urgent Care - Yorkville,New York,40.7813,-73.9515
+GoHealth Urgent Care Center - East 81st,New York,40.7736,-73.9521
+Lenox Hill Hospital,New York,40.7739,-73.9609
+GoHealth Urgent Care Center - W 100th,New York,40.7968,-73.9696
+Northwell GoHealth Urgent Care Center - Williamsburg,Kings,40.7192,-73.9625
+New York University Langone Tisch Hospital,New York,40.7421,-73.9739
+NYC Health + Hospitals Bellevue,New York,40.7397,-73.9763
+GoHealth Urgent Care Center - W 69th,New York,40.7764,-73.9828
+Northwell GoHealth Urgent Care Center - Park Slope,Kings,40.6769,-73.972
+GoHealth Urgent Care Center - Greenwich Village,New York,40.7314,-73.9941
+GoHealth Urgent Care Center - Chelsea,New York,40.7448,-73.9966
+ProHEALTH Urgent Care - Carroll Gardens,Kings,40.6829,-73.9958
+ProHEALTH Urgent Care - Bensonhurst,Kings,40.6168,-73.993
+GoHealth Urgent Care Center - Dongan Hills,Richmond,40.5871,-74.0913
+GoHealth Urgent Care Center - New Dorp,Richmond,40.568,-74.1105
+GoHealth Urgent Care Center - Great Kills,Richmond,40.5534,-74.1441
+GoHealth Urgent Care Center - Bulls Head,Richmond,40.6112,-74.1565
+GoHealth Urgent Care Center - Eltingville,Richmond,40.5454,-74.1593
+ProHEALTH Circle Urgent Care - Eltingville,Richmond,40.543,-74.1643
+ProHEALTH Circle Urgent Care - Tottenville,Richmond,40.5163,-74.2343
+NYC Health + Hospitals/Gotham Health Vanderbilt Walk In,Richmond,40.6204,-74.0769
+One Medical-Manhattan (Hudson Yards) - mobile testing center,New York,40.7556,-74
+Montefiore Medical Center - Bronx Zoo Outreach  Site 2,Bronx,40.8487,-73.8829
+Mount Sinai-Union Square,New York,40.7348,-73.9898
+NYC Health + Hospitals/North Central Bronx Hospital,Bronx,40.8805,-73.8811
+"The Brooklyn Hospital Center - ED, Inpatient and Employee Health",Kings,40.6913,-73.9778
+Queens Aqueduct,Queens,40.6723,-73.8329
+Tres Puentes - Bronx,Bronx,40.8111,-73.9264
+Brownsville - Brooklyn,Kings,40.6654,-73.91
+Bedford-Stuyvesant family care center - Brooklyn 3,Kings,40.6795,-73.9426
+Saint Barnabas Ambulatory Care,Bronx,40.8534,-73.8907
+Joseph P. Addabbo Family Health Center-Guy R. Brewer,Queens,40.6836,-73.7823
+CityMD Urgent Care- East 161st,Bronx,40.8273,-73.9254
+CityMD Urgent Care- Fordham,Bronx,40.8616,-73.892
+CityMD Urgent Care- Parkchester,Bronx,40.8369,-73.8605
+CityMD Urgent Care- Pelham Parkway,Bronx,40.8557,-73.8673
+CityMD Urgent Care- Riverdale,Bronx,40.8844,-73.9003
+CityMD Urgent Care- The Hub,Bronx,40.8169,-73.916
+CityMD Urgent Care- West Fordham,Bronx,40.8626,-73.9016
+CityMD Urgent Care- Bay Ridge,Kings,40.6218,-74.029
+CityMD Urgent Care- Bensonhurst,Kings,40.6023,-73.9939
+CityMD Urgent Care- Bergen Beach,Kings,40.6267,-73.9171
+CityMD Urgent Care- Boerum Hill,Kings,40.6861,-73.9822
+CityMD Urgent Care- Brighton Beach,Kings,40.5776,-73.9603
+CityMD Urgent Care- Broadway Triangle,Kings,40.7019,-73.9426
+CityMD Urgent Care- Bushwick,Kings,40.7002,-73.9204
+CityMD Urgent Care- Cobble Hill,Kings,40.6863,-73.9942
+CityMD Urgent Care- Crown Heights,Kings,40.6699,-73.9314
+CityMD Urgent Care- Flatbush Junction,Kings,40.6335,-73.9475
+CityMD Urgent Care-  Greenpoint,Kings,40.7276,-73.9533
+CityMD Urgent Care- Midwood,Kings,40.6083,-73.9598
+CityMD Urgent Care- Park Slope,Kings,40.6701,-73.9858
+CityMD Urgent Care- Prospect Heights,Kings,40.6782,-73.9737
+CityMD Urgent Care- Prospect Park South,Kings,40.6508,-73.959
+CityMD Urgent Care- Sunset Park,Kings,40.6448,-74.0111
+CityMD Urgent Care- Williamsburg,Kings,40.718,-73.9583
+CityMD Urgent Care- East 14th,New York,40.7328,-73.9866
+CityMD Urgent Care- East 23rd,New York,40.7384,-73.9824
+CityMD Urgent Care- East 50th,New York,40.7551,-73.968
+CityMD Urgent Care- East 67th,New York,40.7668,-73.9631
+CityMD Urgent Care- East 86th,New York,40.7771,-73.9505
+CityMD Urgent Care- East 96th,New York,40.7864,-73.9508
+CityMD Urgent Care- Fulton,New York,40.7103,-74.0083
+CityMD Urgent Care- Delancey,New York,40.7186,-73.9868
+CityMD Urgent Care- West 104th,New York,40.7994,-73.9679
+CityMD Urgent Care- West 125th,New York,40.8074,-73.9452
+CityMD Urgent Care- West 146th,New York,40.8269,-73.949700000000007
+CityMD Urgent Care- West 181st,New York,40.85,-73.9345
+CityMD Urgent Care- West 23rd,New York,40.7424,-73.9909
+CityMD Urgent Care- West 42nd,New York,40.7583,-73.9915
+CityMD Urgent Care- West 57th,New York,40.7674,-73.9838
+CityMD Urgent Care- West 69th,New York,40.7771,-73.9825
+CityMD Urgent Care- West 88th,New York,40.7893,-73.9753
+CityMD Urgent Care- West Harlem,New York,40.8108,-73.9531
+CityMD Urgent Care- Corona,Queens,40.7507,-73.8707
+CityMD Urgent Care- Ditmars,Queens,40.7753,-73.9122
+Forest Urgent Care,Queens,40.7192,-73.8373
+CityMD Urgent Care- Jamaica,Queens,40.705,-73.7972
+CityMD Urgent Care- Rego Park,Queens,40.7338,-73.8698
+CityMD Urgent Care- Forest Avenue,Richmond,40.6288,-74.1164
+CityMD Urgent Care- New Dorp,Richmond,40.5661,-74.1138
+CityMD Urgent Care- Richmond,Richmond,40.5941,-74.1626
+"Forward Clinic, New York",New York,40.743,-73.9863
+"Forward Clinic,",New York,40.7443,-73.9891
+Rite Aid #3865,Queens,40.714,-73.737
+NYC Health + Hospitals Ida G. Israel Community Health Center,Kings,40.5759,-73.9856
+"NYC Health + Hospitals/Gotham Health, Jonathan Williams Houses",Kings,40.708,-73.9607
+PM Pediatrics Urgent Care - Forest Hills,Queens,40.7206,-73.8464
+PM Pediatrics Urgent Care - Cobble Hill,Kings,40.689,-73.9912
+PM Pediatrics Urgent Care - Riverdale,Bronx,40.8827,-73.9014
+PM Pediatrics Urgent Care - Bayside,Queens,40.7791,-73.7791
+PM Pediatrics Urgent Care - Staten Island,Richmond,40.5888,-74.1668
+Prominis Bed-Stuy Dekalb,Kings,40.6906,-73.9598
+Prominis Glendale,Queens,40.7018,-73.8835
+Prominis Jamaica,Queens,40.6716,-73.7747
+Prominis Williamsburg,Kings,40.708,-73.9403
+UMD Urgent Care - Williamsburg,Kings,40.715,-73.9582
+UMD Urgent Care - Astoria,Queens,40.7573,-73.9206
+UMD Urgent Care - LIC,Queens,40.7431,-73.955
+UMD Urgent Care - Northern,Queens,40.7603,-73.8016
+UMD Urgent Care - Jamaica,Queens,40.7075,-73.7959
+Statcare Urgent & Walk-In Medical Care (Astoria),Queens,40.7719,-73.9089
+Statcare Urgent & Walk-In Medical Care (Brooklyn),Kings,40.6711,-73.9576
+Statcare Urgent & Walk-In Medical Care (Bartow),Bronx,40.8702,-73.8284
+Statcare Urgent & Walk-In Medical Care (Jackson Heights),Queens,40.7552,-73.8869
+Statcare Urgent & Walk-In Medical Care (Bronx 174th St.),Bronx,40.837,-73.8873
+Statcare Urgent & Walk-In Medical Care (Midtown Manhattan),New York,40.7627,-73.9898
+Beacon Christian Community Health Center,Richmond,40.6266,-74.1586
+CVS Pharmacy (Drive-thru & Appointment Only),Richmond,40.5497,-74.1523
+CVS Pharmacy (Drive-thru & Appointment Only),Richmond,40.6251,-74.1402
+CVS Pharmacy (Drive-thru & Appointment Only),Richmond,40.5172,-74.2354
+CVS Health Drive-thru Testing Site,Richmond,40.6267,-74.1574
+CVS Pharmacy (Drive-thru & Appointment Only),Richmond,40.5876,-74.1663
+CVS Pharmacy (Drive-thru & Appointment Only),Richmond,40.6159,-74.067
+OpenClear Clinic - Mobile,New York,40.7352,-73.9923
+The Floating Hospital- LIC,Queens,40.7511,-73.9398
+Cure Urgent Care- Upper East Side,New York,40.7856,-73.9495
+Cure Urgent Care - Upper West Side,New York,40.7992,-73.9691
+NYC Health + Hospitals/Elmhurst,Queens,40.7451,-73.8858
+NYC Health + Hospitals/Jacobi,Bronx,40.8557,-73.8462
+"NYC Health + Hospitals/Gotham Health,Highbridge Play Center",New York,40.8428,-73.9342
+"NYC Health + Hospitals/Gotham Health, East New York(Midwood)",Kings,40.6278,-73.9654
+"NYC Health + Hospitals/Gotham Health, Dyckman",New York,40.8614,-73.9243
+CityMD Urgent Care- Bayside,Queens,40.7626,-73.7702
+CityMD Urgent Care- Brooklyn Heights,Kings,40.695,-73.9938
+CityMD Urgent Care- Forest Hills,Queens,40.7205,-73.8453
+CityMD Urgent Care- Fresh Meadows,Queens,40.7401,-73.7864
+CityMD Urgent Care- Jackson Heights,Queens,40.7465,-73.892
+CityMD Urgent Care- Long Island City,Queens,40.7503,-73.9404
+CityMD Urgent Care- Maspeth,Queens,40.7308,-73.8875
+CityMD Urgent Care- Norwood,Bronx,40.8823,-73.8813
+CityMD Urgent Care- West 14th,New York,40.7362,-73.9947
+CityMD Urgent Care- Westchester Square,Bronx,40.8412,-73.8436
+ModernMD Urgent Care - S.E. Williamsburg,Kings,40.7033,-73.9422
+ModernMD Urgent Care - Bedford Stuyvesant,Kings,40.6803,-73.9507
+ModernMD Urgent Care - Flatbush,Kings,40.6493,-73.9587
+ModernMD Urgent Care - Crown Heights,Kings,40.6638,-73.932
+ModernMD Urgent Care - Bushwick,Kings,40.7004,-73.9215
+ModernMD Urgent Care - City Line,Kings,40.6791,-73.8662
+ModernMD Urgent Care - Woodhaven,Queens,40.6926,-73.8547
+CityHealth Urgent Care,Queens,40.7039,-73.825
+AdvantageCare Harlem,New York,40.8097,-73.9489
+AdvantageCare Upper East Side,New York,40.7844,-73.9486
+AdvantageCare East New York,Kings,40.6755,-73.8963
+AdvantageCare Flatbush,Kings,40.6464,-73.9699
+AdvantageCare Bay Ridge,Kings,40.6337,-74.0132
+AdvantageCare Bedford Williamsburg,Kings,40.6909,-73.9513
+AdvantageCare Forest Hills,Queens,40.7109,-73.8565
+AdvantageCare Rockaway,Queens,40.5986,-73.7636
+AdvantageCare Clove Road,Richmond,40.6196,-74.1087
+AdvantageCare Richmond Avenue at The Mall,Richmond,40.5812,-74.1648
+AdvantageCare Richmond Hill,Queens,40.6912,-73.8206
+AdvantageCare Washington Heights,New York,40.8529,-73.9346
+AdvantageCare Kings Highway,Kings,40.6049,-73.9423
+AdvantageCare Jamaica Estates,Queens,40.7133,-73.7821
+AdvantageCare Crown Heights,Kings,40.6693,-73.9501
+AdvantageCare Cambria Heights,Queens,40.6961,-73.7449
+AdvantageCare Elmhurst,Queens,40.7368,-73.8768
+CityMD Urgent Care- Astoria,Queens,40.7608,-73.9171
+ProHealth Urgent Care of Fort Hamilton,Kings,40.6121,-74.0341
+ProHealth Urgent Care - Sheepshead Bay,Kings,40.5999,-73.9421
+CityMD Urgent Care- Auburndale,Queens,40.7576,-73.7904
+Bronx Park Urgent Medical Care,Bronx,40.8507,-73.8656
+Quality Laboratory Service - COVID-19 Testing,Kings,40.5866,-73.9547
+Throgs Neck Urgent Medical Care,Bronx,40.8289,-73.825
+"Excel Urgent Care of Howard Beach, NY",Queens,40.6612,-73.8408
+New York Doctors Walk-In Urgent Care,New York,40.7367,-73.9967
+Midtown New York Doctors Walk-In Urgent Care,New York,40.7452,-73.9803
+CityMD Urgent Care- Baychester,Bronx,40.8668,-73.8275
+CityMD Urgent Care- Bed-Stuy,Kings,40.6807,-73.9519
+CVS Health COVID-19 Drive Thru Testing Site - By Appointment Only,Queens,40.713,-73.9014
+CVS Health COVID-19 Drive Thru Testing Site - By Appointment Only,Kings,40.6213,-73.9178
+CVS Health COVID-19 Drive Thru Testing Site - By Appointment Only,Queens,40.7276,-73.7136
+CVS Health COVID-19 Drive Thru Testing Site - By Appointment Only,Kings,40.6085,-73.9232
+CVS Health COVID-19 Drive Thru Testing Site - By Appointment Only,Kings,40.6109,-73.9838
+CVS Health COVID-19 Drive Thru Testing Site - By Appointment Only,Bronx,40.8861,-73.9106
+CVS Health COVID-19 Drive Thru Testing Site - By Appointment Only,Bronx,40.8302,-73.8711
+CVS Health COVID-19 Drive Thru Testing Site - By Appointment Only,Queens,40.7942,-73.8081
+Kamin Health - Crown Heights Urgent Care,Kings,40.6631,-73.943
+Kamin Health - Union Medical Urgent Care,Queens,40.7286,-73.7824
+Kamin Health - Williamsburg Urgent Care,Kings,40.7054,-73.96
+Kamin Health - Boro Park Urgent Care,Kings,40.6372,-73.9901
+AFC Urgent Care Bronx Kingsbridge,Bronx,40.8779,-73.9052
+AFC Urgent Care Bronx 149th,Bronx,40.8165,-73.9203
+AFC Urgent Care Bronx Webster,Bronx,40.8318,-73.9094
+NYC Health + Hospitals/Brooklyn Army Terminal,Kings,40.6455,-74.0239
+NYC Health + Hospitals/Former St John Villa HS,Richmond,40.6012,-74.0687
+NYC Health + Hospitals/Bay Ridge 5th Ave,Kings,40.6216,-74.0259
+NYC Health + Hospitals/51-30 Northern Boulevard,Queens,40.7526,-73.9086
+NYC Health + Hospitals/St James Rec Center,Bronx,40.8645,-73.899
+NYC Health + Hospitals/Sorrentino Rec Center,Queens,40.6025,-73.7513
+NYC Health + Hospitals/Beach 39th,Queens,40.5944,-73.7714
+NYC Health + Hospitals/Edward Grant,Bronx,40.8387,-73.9217
+AFC Urgent Care - Throgs Neck,Bronx,40.8236,-73.8367
+Citywide Urgent Care - Brooklyn,Kings,40.6272,-73.9468
+Medical Offices of Manhattan,New York,40.7562,-73.9695
+Damian Family Health Center,Queens,40.7022,-73.8151
+Damien Family Care Center,Bronx,40.8119,-73.9251
+Firehouse Family Health Center,Queens,40.7051,-73.7984
+NYC Health + Hospitals 4002 Fort Hamilton,Kings,40.6426,-73.9921
+NYC Health + Hospitals  Bensonhurst 14th Ave,Kings,40.6254,-73.9979
+"Michele Martinho, MD",New York,40.7326,-73.9841
+Urgentway - Bronx,Bronx,40.8441,-73.8354
+Silver Star Urgent Care - Ozone Park,Queens,40.6898,-73.8413
+Silver Star Urgent Care - Far Rockaway,Queens,40.5961,-73.7538
+AFC Urgent Care - Howard Beach,Queens,40.6713,-73.856
+BronxDocs- East 149th Street,Bronx,40.8166,-73.9207
+ParCare Community Health Network,Kings,40.6966,-73.9592
+AdvantageCare Flushing North,Queens,40.7577,-73.8266
+HealthNeed Medical Urgent Care - Queens Crossing,Queens,40.7604,-73.8304
+Riverside Church,New York,40.8117,-73.9627
+Mount Sinai Doctors - East 34th Street,New York,40.7476,-73.9818
+Mount Sinai Doctors - West 23rd Street,New York,40.7456,-73.9986
+Housing Works East New York Health Center,Kings,40.6748,-73.8748
+Housing Works Downtown Brooklyn Health Center,Kings,40.6927,-73.9864
+"East Harlem Council for Human Services, Inc. Boriken Neighborhood Health Center",New York,40.8024,-73.9364
+ParCare Community-Harlem,New York,40.7862,-73.9454
+ParCare Community-Bensonhurst,Kings,40.6166,-73.979
+ParCare Community-Borough Park,Kings,40.6319,-73.9849
+BMC Richmond Multispecialty Group,Queens,40.7017,-73.8294
+North Shore Medical Labs,Queens,40.7344,-73.865
+Forest Urgent Care,Queens,40.7435,-73.9533
+NYC Health + Hospitals/Mariners Harbor Library,Richmond,40.6348,-74.1663
+NYC Health + Hospitals/Windsor Park Library,Queens,40.7345,-73.7557
+NYC Health + Hospitals/Rain Boston Road Senior Center,Bronx,40.8617,-73.8663
+NYC Health + Hospitals/Greenbelt Recreation Center,Richmond,40.5918,-74.1392
+SOMOS: Boston Pediatrics PLLC,Bronx,40.8304,-73.9007
+SOMOS: Stages Pediatrics,New York,40.8394,-73.9429
+SOMOS: Briggs Family Pediatrics PC,Bronx,40.8664,-73.8935
+SOMOS: First Step Pediatrics PC,New York,40.8229,-73.9534
+SOMOS: First Step Medical,Bronx,40.8481,-73.8883
+SOMOS: Divino Nino Pediatrics PLLC,Bronx,40.8593,-73.8862
+SOMOS: Doctor Urgent Medical Care,Bronx,40.8593,-73.8871
+SOMOS: Ola Pediatrics,Bronx,40.8798,-73.908
+SOMOS: Redome Wellness,Bronx,40.8887,-73.912
+"SOMOS: Luisa Perez, MD",New York,40.794,-73.9696
+SOMOS: Concourse Pediatrics PC,Bronx,40.83,-73.9215
+SOMOS: Hispaniola Medical Care PC,New York,40.8211,-73.9536
+SOMOS: Pediatrics 2000 II   PC,New York,40.8197,-73.9548
+SOMOS: Shining Light Family Health,Bronx,40.8299,-73.9189
+SOMOS: National Pediatric Care,Queens,40.7499,-73.8636
+Casa Maria Health Center,Bronx,40.8167,-73.9207
+SOMOS: Carmen Garcia  MD,New York,40.8502,-73.9381
+"SOMOS: Kanthimathi Jothianandan, MD",Bronx,40.844,-73.9134
+SOMOS: Ola Pediatrics,Bronx,40.8547,-73.8653
+Q All Care Urgent Care & Primary Care Center,Queens,40.7682,-73.8308
+N.Y.U.Langone-Manhattan,New York,40.7474,-73.9751
+"Payless Staffing and Consultants Inc - Bronx, NY",Bronx,40.8364,-73.8402
+VIP Community Services,Bronx,40.842,-73.8903
+Acacia: Clay Avenue Health Center,Bronx,40.8461,-73.9042
+Acacia: Claremont Health Center,Bronx,40.8445,-73.906
+BHMA Urgent Care,Kings,40.6892,-73.9823
+NYC Health + Hospitals/ Bathgate Contract Postal Station,Bronx,40.842,-73.8983
+NYC Health + Hospitals/Red Hook Recreation Center,Kings,40.6725,-74.0039
+XpresCheck at JFK,Queens,40.644,-73.7824
+Centers Urgent Care,Kings,40.6258,-73.9581
+Centers Urgent Care,Kings,40.6307,-73.978
+Centers Urgent Care,Kings,40.579,-73.9753
+Altru Chemists,Kings,40.7328,-73.955
+Union Community Health Center: East 188th Street,Bronx,40.8606,-73.896
+Union Community Health Center: Grand Concourse,Bronx,40.852,-73.9045
+Carecube- 5th Ave,Kings,40.6302,-74.0226
+CareCube- Brownsville  Multi specialty,Kings,40.6696,-73.9096
+CareCube-Brownsville Family Medici,Kings,40.6551,-73.9091
+CareCube- Ocean Parkway,Kings,40.6429,-73.9747
+CareCube-South Bronx,Bronx,40.8081,-73.9197
+CareCube,Kings,40.6457,-74.0094
+Chai Urgent Care- Staten Island,Richmond,40.5819,-74.0982
+NYU Langone Hospital- Brooklyn,Kings,40.6467,-74.0209
+NYU Langone Ambulatory Care Rego Park,Queens,40.7291,-73.8582
+NYC Health + Hospitals/Old Broadway,New York,40.8155,-73.9565
+NYC Health + Hospitals/Saint Nicholas Houses,New York,40.8115,-73.949700000000007
+Chai Urgent Care - Williamsburg,Kings,40.6986,-73.9566
+Chai Urgent Care - Boro Park,Kings,40.6398,-73.9838
+North Eastern Network Wellness,Kings,40.6792,-73.9744
+SOMOS: Metropolis Medical PC,New York,40.7988,-73.9528
+BronxCare Third Avenue- Dr. Martin Luther King,Bronx,40.8146,-73.9209
+BronxCare Fulton Campus,Bronx,40.8312,-73.9031
+CityMD Urgent Care- East 79th,New York,40.7751,-73.9586
+CityMD Urgent Care- Ozone Park,Queens,40.6812,-73.8383
+Wyckoff Heights Medical Center,Kings,40.7048,-73.9179
+Settlement Health,New York,40.791,-73.9441
+CityMD Urgent Care- Southern Boulevard,Bronx,40.8242,-73.8922
+CityMD Urgent Care- Chambers,New York,40.7149,-74.0071
+Glendale Family Medicine & Urgent Care,Queens,40.7029,-73.8716
+HealthCare Choices - East New York,Kings,40.68,-73.8941
+Chai Urgent Care - Mill Basin,Kings,40.619,-73.9232
+African Services Committee,New York,40.8135,-73.9545
+Elite Specialty,Queens,40.6856,-73.8402
+MedRite Urgent Care,New York,40.7576,-73.9916
+MedRite Urgent Care,New York,40.7542,-73.9693
+MedRite Urgent Care,Kings,40.6933,-73.9644
+Super Health Pharmacy,Richmond,40.5221,-74.2153
+Vault Health,New York,40.762,-73.9689
+Stevenson Family Health Center,Bronx,40.8202,-73.8582
+Charles B. Wang Community Health Center,Queens,40.7616,-73.8301
+Charles B. Wang Community Health Center,Queens,40.7514,-73.8222
+Charles B. Wang Community Health Center,New York,40.7188,-74.0013
+COVID Express at Corona,Queens,40.7543,-73.872
+COVID Express at Washington Heights,New York,40.8411,-73.9402
+Grand Care Pharmacy,Queens,40.7247,-73.8968
+LEAA Health,New York,40.7541,-73.9809
+COVID Express at Chelsea,New York,40.7496,-73.9998
+James J. Peters Department of Veterans Affairs Medical Center,Bronx,40.8674,-73.9064
+Thomas P. Noonan Jr. Department of Veterans Affairs Outpatient Clinic,Queens,40.744,-73.9231
+Manhattan VA Medical Center,New York,40.7372,-73.9767
+Brooklyn VA Medical Center,Kings,40.6082,-74.0239
+St. Albans VA Medical Center,Queens,40.6908,-73.7685
+Harlem VA Clinic,New York,40.8075,-73.9442
+Staten Island Community VA Clinic,Richmond,40.612,-74.1778
+Carbon Health Pop-Up Covid-19 Testing Clinic,Kings,40.7137,-73.9564
+COVID Express at Jamaica,Queens,40.7039,-73.8002
+Carbon Health COVID 19 Testing Center,New York,40.7121,-74.0152
+Premier HealthCare,New York,40.7496,-73.9734
+COVID Express at Riverside,New York,40.7959,-73.9682
+COVID Express at Central Harlem,New York,40.8139,-73.9371
+COVID Express at Morrisania,Bronx,40.8327,-73.9033
+Housing Works Cylar House Health Center,New York,40.7246,-73.976
+Premier HealthCare,Bronx,40.839,-73.8365
+Speedy Sticks,Richmond,40.6433,-74.0849
+NYC Health + Hospitals/Canarsie Muni Lot,Kings,40.6472,-73.902
+NYC Health + Hospitals/4101 White Plains Road,Bronx,40.8909,-73.8591
+Felicity Pharmacy,Bronx,40.8463,-73.8925
+BronxCare Ogden,Bronx,40.8349,-73.9284
+Rapid Test Center,New York,40.7773,-73.9793
+Speedy Sticks,Richmond,40.6301,-74.1392
+Speedy Sticks,Richmond,40.5357,-74.2104
+Speedy Sticks,Kings,40.6683,-73.9353
+Speedy Sticks,Kings,40.6226,-74.024
+Speedy Sticks,New York,40.7879,-73.9716
+NYC Health + Hospitals/The Episcopal Church of St. Alban the Martyr,Queens,40.6926,-73.7629
+Premier HealthCare,Kings,40.602,-73.9425
+Premier HealthCare,Queens,40.76,-73.7717
+Carecube-East Flatbush  Primary Care,Kings,40.6533,-73.9501
+ParaDocs Worldwide Inc,New York,40.75,-73.9857
+LabQ Diagnostics,Kings,40.6455,-74.0239
+Staten Island Drive Thru,Richmond,40.5819,-74.0805
+Bronx Lehman,Bronx,40.8747,-73.8951
+Century Medical and Dental Center,Kings,40.6897,-73.9863
+Century Medical and Dental Center Multi-Specialty Clinic,Kings,40.654,-73.96
+Century Medical and Dental Center,Kings,40.59,-73.9734
+NYC Health + Hospitals/Starett City,Kings,40.6498,-73.8828
+Formation Health,New York,40.7504,-73.978
+PM Pediatrics Urgent Care - Bellerose,Queens,40.7362,-73.7147
+AdvantageCare Brooklyn Heights,Kings,40.6942,-73.9914
+Health Hub Pharmacy,Queens,40.7629,-73.9153
+CVS COVID-19 Test Site,Richmond,40.541,-74.1475
+OnSite Safe,New York,40.7415,-73.9921
+NYC Health + Hospitals/ LaGuardia Airport Terminal B,Queens,40.7729,-73.8752
+NYC Health + Hospitals/ Kew Gardens Hills Library,Queens,40.7259,-73.8207
+Speedy Sticks,New York,40.7362,-73.9968
+Speedy Sticks,New York,40.7453,-73.9802
+Speedy Sticks,Queens,40.7013,-73.9054
+Speedy Sticks,Kings,40.6935,-73.9914
+Speedy Sticks,Queens,40.7463,-73.8851
+Speedy Sticks,Queens,40.7545,-73.8973
+Speedy Sticks,Bronx,40.8822,-73.9169
+Speedy Sticks,New York,40.7465,-73.9835
+Speedy Sticks,Kings,40.6088,-73.959
+Speedy Sticks,New York,40.7478,-73.9838
+Speedy Sticks,New York,40.7512,-73.9864
+"BronxCare Health System, Department of Pediatrics",Bronx,40.8435,-73.9111
+COVID Express at Crown Heights,Kings,40.6733,-73.9359
+COVID Express at Fort Greene,Kings,40.6918,-73.9821
+Stat Care Urgent & Walk In Medical Care,Queens,40.7024,-73.8085
+Delco Drugs Specialty Pharmacy,Richmond,40.5448,-74.1653
+DrugBox Pharmacy,Bronx,40.8692,-73.8316
+Gena Care Pharmacy,Kings,40.6807,-73.9283
+Gristedes Pharmacy,Kings,40.6977,-73.9921
+Imperial Pharmacy,Bronx,40.88,-73.9078
+"NYC Health + Hospitals/Gotham Health, Homecrest",Kings,40.6039,-73.9559
+"NYC Health + Hospitals/Gotham Health, Tremont",Bronx,40.848,-73.9003
+Rapid Test NYC,New York,40.7231,-73.9938
+Silver Star Urgent Care - Rockaway Park,Queens,40.5843,-73.8226
+Hopkins Drugs & Compounding,Queens,40.7461,-73.9003
+Betances Health Center,New York,40.7136,-73.9836
+Advanta Medical PC.,Kings,40.5795,-73.9601
+Speedy Sticks (150 E 42nd St),New York,40.7509,-73.9755
+Speedy Sticks Lexington Ave,New York,40.7519,-73.9756
+Speedy Sticks(Greenwich St),New York,40.7211,-74.0114
+ADAMS HEALTH SERVICES,Queens,40.643,-73.7909
+MedRite - Park Slope,Kings,40.6763,-73.9834
+Concierge COVID Test NYC,New York,40.7757,-73.9521
+Formation Health 633 Third Avenue,New York,40.7497,-73.9748
+AG Urgent Care - Bushwick,Kings,40.69,-73.9225
+AG Urgent Care - Flatbush Junction,Kings,40.6321,-73.9473
+AG Urgent Care - Prospect Lefferts Gardens,Kings,40.6567,-73.9598
+AG Urgent Care - Brownsville,Kings,40.6557,-73.9159
+AG Urgent Care - Jamaica,Queens,40.7063,-73.7921
+NYC Health + Hospitals/John F. Kennedy Airport (next to the Terminal 5 Airtrain Station),Queens,40.6473,-73.7797
+NYC Health + Hospitals/Staten Island Ferry Terminal,Richmond,40.6435,-74.0725
+NYC Health + Hospitals/Queens Public Library at Lefferts,Queens,40.6869,-73.8249
+PM Pediatrics Urgent Care - Midwood,Kings,40.6266,-73.9651
+PM Pediatrics Urgent Care - Bensohurst,Kings,40.6072,-74.0019
+CareCube,Kings,40.6645,-73.9839
+"Mujtaba NP in Family Health, PC",Queens,40.7499,-73.8606
+Essen Health Care - Riverdale,Bronx,40.9063,-73.9051
+Essen Health Care - Norwood,Bronx,40.8768,-73.8851
+Essen Health Care - University Heights,Bronx,40.846,-73.9213
+Essen Health Care - West Bronx,Bronx,40.8467,-73.8936
+Essen Health Care - Bangla Bazaar,Bronx,40.8348,-73.8583
+Essen Health Care - Allerton,Bronx,40.8661,-73.8671
+Essen Health Care - Westchester Square,Bronx,40.843,-73.8446
+Essen Health Care - Fordham Heights,Bronx,40.8558,-73.9005
+Essen Health Care - Pelham Gardens,Bronx,40.8597,-73.8427
+Essen Health Care - Parkchester,Bronx,40.8354,-73.8634
+Essen Health Care - Hunts Point,Bronx,40.8211,-73.8926
+Essen Health Care - Mott Haven,Bronx,40.8068,-73.9179
+Essen Health Care - Melrose,Bronx,40.824,-73.9118
+Essen Health Care - Concourse Village,Bronx,40.8283,-73.9214
+Essen Health Care - South Bronx,Bronx,40.8142,-73.9207
+Essen Health Care - Fordham Manor,Bronx,40.8679,-73.8837
+Essen Health Care - Glendale,Queens,40.7071,-73.8557
+Essen Health Care - Williamsburg,Kings,40.713,-73.9439
+Ahava Medical And Rehabilitation Center,Kings,40.7007,-73.9406
+Speedy Sticks (25 Broad St ),New York,40.7061,-74.0111
+Speedy Sticks (80 Broad St),New York,40.7043,-74.0118
+Speedy Sticks(Hudson St),New York,40.7291,-74.0078
+Speedy Sticks (605 W 42nd St),New York,40.7614,-73.9988
+Brooklyn Family Medicine,Kings,40.6577,-73.9506
+SOMOS: Godwin Medical,Bronx,40.8814,-73.9094
+Brook Total Care,Bronx,40.8092,-73.9185
+Doral Health & Wellness  Urgent Care Center,Kings,40.6705,-73.9068
+NuCare Pharmacy & Surgical,New York,40.7812,-73.9466
+Pilgrim Pharmacy,Bronx,40.8471,-73.8332
+Amiable Pharmacy,Kings,40.6784,-73.8684
+Esco Drug Company,New York,40.7619,-73.9904
+Mt. Carmel Pharmacy,Bronx,40.8543,-73.8842
+First Response Urgent Care,Kings,40.6686,-73.9074
+First Response Urgent Care,Kings,40.6831,-73.9639
+NY Family Docs- 79-24 Jamaica Avenue,Queens,40.6918,-73.8624
+NY Family Docs- 86-16 Jamaica Avenue,Queens,40.6924,-73.8575
+NY Family Docs- 76-02 Jamaica Avenue,Queens,40.6915,-73.8655
+NY Family Docs- 1052 Liberty Avenue,Kings,40.6781,-73.8702
+NY Family Docs- 127 Bedford Avenue,Kings,40.7193,-73.9559
+NY Family Docs- 64-14 Myrtle Avenue,Queens,40.7008,-73.8919
+NY Family Docs- 1111 Ocean Avenue,Kings,40.6348,-73.9577
+NY Family Docs- 112-08 Springfield Blvd,Queens,40.7051,-73.7403
+NY Family Docs- 175-20 Hillside Avenue,Queens,40.7116,-73.7869
+NY Family Docs- 99-32 66th Road,Queens,40.7276,-73.8534
+Ainsworth Institute of Pain Management,New York,40.7615,-73.9699
+NorthPoint Medical Associates,Bronx,40.8311,-73.8918
+Avenue C Pharmacy - New York,New York,40.7265,-73.9767
+Unity Drugs - Brooklyn,Kings,40.7117,-73.9423
+NYC Health + Hospitals/NYCHA Marcy Houses Mobile Unit,Kings,40.6964,-73.9513
+NYC Health + Hospitals/NYCHA Latimer Gardens Mobile Unit,Queens,40.7344,-73.8121
+NYC Health + Hospitals/NYCHA Berry Houses Mobile Unit,Richmond,40.5864,-74.101
+NYC Health + Hospitals/NYCHA Mill Brook Mobile Unit,Bronx,40.8037,-73.9158
+NYC Health + Hospitals/Poppenhusen Playground Mobile Unit,Queens,40.7817,-73.845
+NYC Health + Hospitals/Soundview Park Mobile Unit,Bronx,40.8206,-73.8732
+NYC Health + Hospitals/Martin F.Tanahey Playground Mobile Unit,New York,40.7106,-73.9941
+NYC Health + Hospitals/Holy Family Church Mobile Unit,Bronx,40.8295,-73.851
+NYC Health + Hospitals/Hunts Point Playground Mobile Unit,Bronx,40.8146,-73.8865
+NYC Health + Hospitals/Leif Ericson Park Mobile Unit,Kings,40.6301,-74.01
+NYC Health + Hospitals/Greenpoint Health Center (Self-Testing Station),Kings,40.7296,-73.9544
+NYC Health + Hospitals/Judson Health Center(Self-Testing Station),New York,40.7215,-73.9959
+NYC Health + Hospitals/Williamsburg Adult Med (Self-Testing Station),Kings,40.7121,-73.9443
+NYC Health + Hospitals/Ridgewood Medical Center (Self-Testing Station),Queens,40.7031,-73.9055
+NYC Health + Hospitals/Mt.Loretto Sportsplex,Richmond,40.5117,-74.2216
+NYC Health + Hospitals/Co-op City Retail Spces,Bronx,40.8783,-73.8285
+Urgentway - Manhattan,New York,40.754,-73.9926
+Joseph P. Addabbo Family Health Center,Queens,40.5935,-73.7917
+Joseph P. Addabbo Family Health Center,Queens,40.6078,-73.7491
+Joseph P. Addabbo Family Health Center-Sutphin Blvd,Queens,40.6852,-73.7927
+Joseph P. Addabbo Family Health Center-Richards Street,Kings,40.6778,-74.0099
+Metro Drugs-Richmond Hill,Queens,40.7022,-73.8185
+Formation Health Brooklyn,Kings,40.7191,-73.9594
+Neergaard Pharmacy,Kings,40.6689,-73.9868
+King's Specialty Pharmacy,Kings,40.6769,-73.972

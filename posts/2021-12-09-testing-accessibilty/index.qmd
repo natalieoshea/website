@@ -1,0 +1,225 @@
+---
+title: "COVID-19 Testing Accessibilty in NYC"
+execute: 
+  message: false
+  warning: false
+author: "Natalie O'Shea"
+date: "2021-12-09"
+categories: [geospatial, analysis, tutorial]
+image: "image.jpg"
+---
+
+Around this time last year, as I was wrapping up my time as a community outreach data analyst for the NYC Census 2020 initiative and preparing to join the NYC Test & Trace Corps, I had the opportunity to attend [Kyle Walker's Penn MUSA Masterclass](http://walker-data.com/MUSAmasterclass/tutorial/#4_Analyzing_elections_and_accessibility_with_mapboxapi) on mapping and analyzing early voting accessibility. I had already been working with the `tidycensus` package extensively but was excited to learn about how I could integrate more advanced geospatial mapping techniques with census data to help target specific populations for a more data-informed and equitable outreach strategy. I could see the relevance of this approach for COVID-19 testing accessibility, so I modified the analysis to help address questions around how best to deploy mobile testing resources so that all New Yorkers could have ample access to testing.
+
+In the example below, I walk through how to perform an analysis of COVID-19 testing accessibility and identify potential gaps filtered by census demographic data. Feel free to try this approach using testing location data from your own city! If you check out the tutorial I linked above, there is information on how you can use `mapboxapi` for geocoding. So if you only have access to a list of addresses but no latitude/longitude coordinates, you too can perform this analysis with a little extra work!
+
+## Getting Started
+
+Before you can use `tidycensus` and `mapboxapi`, you'll need to set up your access tokens and API keys in your R environment file. You'll need to visit the following sites to obtain these key pieces of information (more detailed setup information is available in the main tutorial):
+
+-   [Mapbox Access Token](https://account.mapbox.com/auth/signup/)
+-   [Census API Key](https://api.census.gov/data/key_signup.html)
+
+Once you have this information, you can use the code block below to save these variables to your system.
+
+```{r, eval=FALSE}
+# install packages
+install.packages(c("tidyverse","tidycensus","sf","leaflet","usethis",
+                   "mapboxapi","fasterize","raster","tigris", "geojsonio"))
+
+# mapbox access token (only need to install once)
+# sign up and get access token here: https://account.mapbox.com/auth/signup/
+my_token <- 'MY_TOKEN_HERE'
+mapboxapi::mb_access_token(my_token, install = TRUE)
+
+# census api key (only need to install once)
+# sign up and get api key here: https://api.census.gov/data/key_signup.html
+my_key <- 'MY_KEY_HERE'
+tidycensus::census_api_key(my_key, install = TRUE)
+
+# restart R and check installations
+.rs.restartR()
+Sys.getenv("CENSUS_API_KEY")
+Sys.getenv("MAPBOX_PUBLIC_TOKEN")
+
+# if you're having issues, you can manually edit your .Renviron file
+usethis::edit_r_environ()
+```
+
+Alright! Now that we're all set up with our R environment, we can start the analysis. First things first, we need to load our data processing libraries and CSV files. Below, I load two CSV files, one with the testing site locations and a crosswalk file that identifies census tracts that have been labeled as parks, cemeteries, and other public spaces that have few inhabitants. This isn't strictly necessary for this analysis, but is helpful for filtering out large parks that are often identified as testing accessibility gaps.
+
+```{r}
+# load libraries
+library(tidyverse)
+library(sf)
+library(leaflet)
+library(mapboxapi)
+library(fasterize)
+library(raster)
+library(tidycensus)
+library(tigris)
+
+# load data
+crosswalk <- read_csv("data/crosswalk_tracts2010.csv") %>%
+  # save only tracts in park-cemetery-etc (used to filter target areas)
+  filter(str_detect(neighborhood, "park-")) 
+
+testing_sites <- read_csv("data/testing_sites.csv")
+```
+
+Next let's take a quick look at our testing locations, and make sure they're where we expect them to be (i.e., within New York City).
+
+```{r}
+# save base map
+mapbox_map <- leaflet() %>%
+  addMapboxTiles(style_id = "light-v10",
+                 username = "mapbox")
+
+# testing location map
+testing_map <- mapbox_map %>%
+  addCircleMarkers(data = testing_sites,
+                   radius = 3,
+                   stroke = FALSE,
+                   fillOpacity = 1)
+testing_map
+```
+
+## Calculate Isochrones
+
+Now it's time to calculate our walking distance isochrones. But first, what the heck is an isochrone anyways? Isochrones are simply maps that show the area accessible from a given point within a certain time range. Using `mapboxapi`, you can calculate walking, cycling, or driving distances. We're going to choose walking distances because boo cars! This is New York City, baby! I'm walking here!
+
+```{r}
+# save crs
+crs_4326 <- sp::CRS(SRS_string = "EPSG:4326")
+crs_3857 <- sp::CRS(SRS_string = "EPSG:3857")
+
+# test isochrone map
+test_iso <- testing_sites %>%
+  # pull first testing site
+  slice(1) %>%
+  # use lat/long coordinates for mapping
+  st_as_sf(coords = c("longitude","latitude"), crs = crs_4326) %>%
+  # calculate walking distance isochrones
+  mb_isochrone(profile = "walking", time = c(10,20,30))
+
+# color palette of 3 viridis colors
+colors <- viridisLite::viridis(3)
+
+# map 10, 20, and 30 walking distance isochrones
+test_iso_map <- mapbox_map %>%
+  addPolygons(data = test_iso,
+              color = rev(colors),
+              fillColor = rev(colors),
+              fillOpacity = 0.5,
+              weight = 0.2) %>%
+  addLegend(labels = c(10,20,30),
+            colors = colors,
+            title = "Walk time to testing<br/>location (minutes)")
+test_iso_map
+```
+
+So we can calculate walking distances from a single testing location, but to better understand just how many testing locations are clustered in a particular area we need to create a heatmap of the number of sites within a 20-min walk across the city. To do that, we'll calculate isochrones for each of our nearly 500 testing sites and then merge them into a raster map that illustrates the number of testing sites within a 20-min walk from any given location in the city. If you happen to have an estimate of how many tests are processed at each location you could instead point to that information in the `mutate(test_id = 1)` line to get a map of citywide testing *capacity*, which is a related but somewhat different question from testing *accessibility*.
+
+```{r}
+# calculate 20 minute walking isochrones for all testing sides
+location_isochrone_all_20 <- testing_sites %>%
+  st_as_sf(coords = c("longitude","latitude"), crs = crs_4326) %>%
+  mb_isochrone(profile = "walking", time = c(20)) %>%
+  st_transform(crs_3857) 
+
+# add column to indicate testing site count (1 testing site per mapped location)
+# could be modified with an estimate of testing capacity
+polygons_proj <- location_isochrone_all_20 %>%
+  mutate(test_id = 1)
+
+# create a raster layer object
+template <- raster(polygons_proj, resolution = 25, crs = crs_3857)
+
+# generate raster layer using the sum of all testing locations
+raster_surface <- fasterize(polygons_proj, template, field = "test_id", fun = "sum")
+
+# define the range of raster values (# of testing sites within a 20 min walk of a given area)
+raster_values <- tibble(values = values(raster_surface)) %>% 
+  filter(!is.na(values)) %>% 
+  distinct(values) %>% 
+  pull(values)
+
+# create viridis color palette with range raster values
+custom_pal <- colorNumeric("viridis",
+                           raster_values,
+                           na.color = "transparent")
+
+# create a heatmap of testing sites throughout the city
+location_heatmap_all_20 <- mapbox_map %>%
+  addRasterImage(raster_surface, colors = custom_pal,
+                 opacity = .75, group = "Raster") %>%
+  addLegend(pal = custom_pal,
+            values = raster_values,
+            title = "Number of testing sites<br>within 20-minute walk") 
+location_heatmap_all_20
+```
+
+## Identify Target Areas
+
+Finally, now that we have a better idea of where testing locations currently are we can start to explore where new testing resources *should* be and use census data to target particular demographics for a more equitable resource deployment strategy.
+
+Simply looking at the previous maps, we can see that we have more limited testing accessibility in Staten Island. However, folks on Staten Island tend to have greater access to personal vehicles so let's use data from the census to filter out areas with high car ownership. Additionally, we'll want to pull the hydrogeography data for NYC using the `tigris` package so we can trim out water areas from our resulting target areas map.
+
+```{r, results='hide'}
+# download percent occupied housing units with no vehicles available from ACS
+no_cars <- get_acs(
+  geography = "tract",
+  variables = "DP04_0058P",
+  state = "NY",
+  county = c("Bronx", "Kings", "New York", "Queens", "Richmond"),
+  geometry = TRUE,
+  cb = FALSE
+) %>%
+  # if park census tract, set to NA
+  mutate(estimate = ifelse(GEOID %in% crosswalk$GEOID10, NA, estimate))
+
+# save area hydrography shapefile
+water <- area_water("NY", c("Bronx", "Kings", "New York", "Queens", "Richmond"), class = "sf") %>%
+  # combine into one geometry
+  st_union()
+```
+
+Below, I use lots of functions from the wonderful `sf` package to prepare our shapefiles for analysis, filter out census tracts with high car ownership, and cut out areas within a 20-min walking radius of a testing site. The resulting map identifies key target areas where folks lack nearby testing resources and don't have access to a personal vehicle to easily get to a testing site without needing to use public transportation. Overall, we can see that NYC has quite extensive COVID-19 testing accessibility with only a few areas identified as gaps. Pretty cool, huh?
+
+```{r}
+# erase overlapping areas (trims water areas of census tracts)
+no_cars_erase <- st_difference(no_cars, water)
+
+# set CRS for walking isochrones
+isochrones <- location_isochrone_all_20 %>%
+  # transform CRS (needed for st_difference step in target areas calculation)
+  st_transform(crs_3857) %>%
+  # combine into one geometry
+  st_union() %>%
+  # force valid geometry
+  st_make_valid()
+
+# save target areas for resource deployment
+target_areas <- no_cars_erase %>%
+  st_transform(crs_3857) %>%
+  # only save tracts with >15% of households lacking personal vehicle
+  filter(estimate >= 15) %>%
+  # force valid geometry
+  st_make_valid() %>%
+  # cut out areas from census tracts that overlap with 20-min walking isochrone
+  st_difference(isochrones) %>%
+  # tranform back into mapping CRS
+  st_transform(4326) %>%
+  # extract target polygons
+  st_collection_extract(type = "POLYGON")
+
+# map target areas
+targets <- mapbox_map %>%
+  addPolygons(data = target_areas,
+              stroke = FALSE,
+              color = "#713e7c",
+              fillOpacity = 1)
+targets
+```
+
+That's all! Again, I highly recommend checking out [the original tutorial](http://walker-data.com/MUSAmasterclass/tutorial/#4_Analyzing_elections_and_accessibility_with_mapboxapi) to learn more about integrating `mapboxapi` and `tidycensus`. If you're looking for an even broader introduction to analyzing census data with R, you might want to take a look at the book, [Analyzing US Census Data: Methods, Maps, and Models in R](https://walker-data.com/census-r/).

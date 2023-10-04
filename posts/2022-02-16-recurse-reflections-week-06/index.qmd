@@ -1,0 +1,16 @@
+---
+title: "Recurse Reflections: The End (or Beginning?)"
+author: "Natalie O'Shea"
+date: "2022-02-16"
+categories: [reflection]
+image: "image.jpg"
+---
+
+Wow... life is a-changing far faster than I could ever imagine. I'm feeling a lot of emotions (to put it mildly) writing this last Recurse Reflections post. I certainly did not accomplish all the technical work that I had set out to do during my time at RC but many, arguably far more important, things were being worked through during this time. Isn't it wild the way life can feel stagnant for years and then jump into hyper-speed in the blink of an eye?
+
+Somewhat frustratingly just as I was finding my groove at the retreat (nice balance of solo work and pairing and a good mix of JavaScript play and R deep-dives), I entered the final stages of several job interviews and ended up having to make some incredibly difficult life decisions within a short period of time. It's been exhilarating, stressful, joyful, heartbreaking... you name it, I'm feeling it all. There's a reason why they caution you to put off interviewing during your batch time if possible, but as an R programmer that really wants to continue working in R my opportunities are fewer and far between than your classic software engineer so I needed to strike while the iron was hot. All that being said, I have two big pieces of news to share coming out of this retreat:
+
+1.  I accepted an offer to join the team at [BetterUp](https://www.betterup.com/) as an analytics consultant! I am overjoyed about this opportunity to apply my data skills in an area that aligns so well with my core values of belonging and equity. Not to mention, it is a very R-centric company so I'll be joining a whole team of R nerds which is an absolute dream!
+2.  My husband and I decided that it's time to leave our beloved NYC and move closer to both of our families, so we'll be moving to Chicago at the beginning of April. There's a ton to be excited about with this new move, but I'm also really heartbroken to say goodbye to this time in our lives. Suffice it to say that I've been crying a lot lately... at the bodega, the laundromat, on the 7 train. Everything is beautiful and sad right now and I'm just... tender. Very tender. We're renting for a year to see how it goes, and as my husband keeps reminding me, if we've been Stockholm-ed beyond repair we can always return. But don't dare say my best friend's name or I WILL have an emotional breakdown.
+
+![](https://media.giphy.com/media/NUPDmorpTnZF7ZyYaE/giphy.gif){fig-align="center"}

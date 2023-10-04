@@ -1,0 +1,20 @@
+---
+title: "Natalie O'Shea"
+image: profile.jpg
+about:
+  template: jolla
+  links:
+    - icon: linkedin
+      text: LinkedIn
+      href: https://www.linkedin.com/in/natalie-oshea/
+    - icon: github
+      text: Github
+      href: https://github.com/natalieoshea
+    - icon: mastodon
+      text: Mastodon
+      href: https://fosstodon.org/@_natalie_oshea
+---
+
+Hello there! I'm an anthropologist turned full-time R nerd 🤓
+
+While working on my PhD in biological anthropology, I fell in love with reproducible research using R. Over the years, I grew less interested in pursuing an academic career so when an opportunity to transition into non-academic data science and analytics work presented itself at the beginning of 2020, I decided to jump ship. Since then I've been delighted to emerge myself fully in the broader R and data science community, including joining the leadership team for [Data Science by Design (DSxD)](http://datasciencebydesign.org/about), a community dedicated to developing a more open, ethical, and inclusive future for the field of data science.

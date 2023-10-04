@@ -1,0 +1,38 @@
+---
+title: "Recurse Reflections: Week 01"
+author: "Natalie O'Shea"
+date: "2022-01-07"
+categories: [reflection]
+image: "image.jpg"
+---
+
+**New year, new me!**
+
+*(cue eye roll...)*
+
+In all seriousness though, this year is shaping up to be a pretty transformational one for me already. Like nearly every person on the planet, the past 2 (or 4... or 6...) years have left me incredibly burnt out. While I remain insatiably curious about the world around me, that curiosity has been sparking more anxiety than joy lately. As 2021 was winding down, I knew something needed to change. So I applied to the Recurse Center, was accepted, and here I am, beginning 2022 surrounded by a community of similarly curious programmers!
+
+If you're not familiar already, [the Recurse Center](https://www.recurse.com/about) is "a self-directed, community-driven educational retreat for programmers". Retreats are run in "batches" that can be as short as one week (a "mini") or as long as twelve weeks (a full batch). My batchmates come from all walks of life and are at all levels of coding experience, from decades-long careers at major software companies to career-changers just getting started. While most come from the software engineering or web development side of things, there are several other data scientists in the group. I am, however, the lone R programmer in my batch (or rather, the only one with that language as my main focus/love).
+
+Given that one of my main goals for this experience is to shift from a scripting mindset to more of a development mindset, it has been wonderful to surround myself with folks that think deeply about what it takes to build simple, robust tools and programs. Though I do hope to inspire some others R/Shiny developers to consider doing a batch one day... I think our little community would be a very welcome addition to this one!
+
+![](https://media.giphy.com/media/kSlJtVrqxDYKk/giphy.gif){fig-align="center"}
+
+## The first week
+
+My first week was quite the whirlwind of getting to know folks and orienting myself to the virtual environment that RC is currently run on (hopefully one day I'll be able to do an in-person batch!). Here are some of the things I did this week:
+
+-   Completed week 1 of [#genuary2022](https://genuary.art/). I'm still very early in my JavaScript and `p5.js` learning journey, but [here are some of the sketches I worked on](https://editor.p5js.org/natalieoshea/collections/zVcx2_YUx).
+-   Similarly I spent a lot of time hanging out with and pairing with the creative coders in the group, including [ilithya](https://www.ilithya.rocks/about/) who I have been admiring from a far on Twitter for a while now! (hi! hello! big fan! keep rocking!)
+-   Read a lot of the [R Packages book](https://r-pkgs.org/) and poked around the source code for several API R packages, including my badass friend, Sharla's, dope [opendatatoronto](https://sharlagelfand.github.io/opendatatoronto/) package (hi! hello! big fan! keep rocking!)
+-   Watched the first two lectures of Statistical Rethinking to (re-)learn Bayesian analysis. Richard McElreath is an incredible lecturer and got me excited about science again with his [first lecture](https://www.youtube.com/watch?v=cclUd_HoRlo&feature=youtu.be)! (hi! hello! big fan! keep rocking!)
+-   Watched the [Simple Made Easy lecture](https://www.youtube.com/watch?v=SxdOUGdseq4) by Rich Hickey and joined the Software Complexity discussion group to listen in mostly... a lot of this went over my head but I enjoyed the breakdown of how to avoid "complecting" your programs. I also realized that I should probably pump the breaks on some of my R package coding ambitions and spend time really designing how I want my package to work first.
+-   Just generally enjoyed the good vibes, man.
+
+## Plans for moving forward
+
+In typical Nat form, the list of things I *want* to do is much longer than the list of things I can realistically accomplish without driving myself into the ground (NO BURNOUT!). My main ambition with this retreat is to grow and develop as an R/Shiny developer so I'm starting my batch by working on an R package (or rather one "big" one that I intend to publish to CRAN and one smaller, more playful one). I plan to tackle [Engineering Production-Grade Shiny Apps](https://engineering-shiny.org/) later in my batch and hopefully develop an app with the `{golem}` framework. I also want to continue learning JavaScript and playing in `p5`, despite how much I currently suck at it. I think a week of #genuary was enough for me, but I will be returning to those prompts to refactor and maybe build on the sketches I started and also tackle some of the #RecreationThursday prompts I missed. To tie my JavaScript learnings to R, I also plan to read [JavaScript for Data Science](https://js4ds.org/) (co-written by the incredible [Maya Gans!](https://twitter.com/Mayacelium)) as well as [JavaScript for R](https://book.javascript-for-r.com/).
+
+See? The list is already getting unwieldy again (*shakes head*).
+
+![](https://media.giphy.com/media/c2v0UakiMFb1u/giphy.gif){fig-align="center"}

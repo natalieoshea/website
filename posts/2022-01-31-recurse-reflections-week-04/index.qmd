@@ -1,0 +1,148 @@
+---
+title: "Recurse Reflections: Week 04"
+author: "Natalie O'Shea"
+date: "2022-01-31"
+categories: [reflection, code art]
+image: "image.jpg"
+---
+
+I truly cannot believe that it's the end of January... where did all the time go?! I missed last week's Recurse Reflection for good reason: I became an auntie! My nephew was *supposed* to arrive in mid-February but decided to show up to the party early (don't worry, in time I will teach him the importance of being fashionably late like his cool auntie). I've admittedly been spending a lot of my time staring at my phone with a stupid smile as I admire incoming photos and videos of our newest family member sleeping and eating and bathing... it's awesome and I'm in love. Additionally, I also took a few days off to take my husband skiing upstate to celebrate his birthday! In these and other ways, life has been just... happening. I'm sure I'll have more to share in the coming weeks, but I have been overwhelmed by life things lately (thankfully all good things, but overwhelming nonetheless).
+
+During my coding time, I've been continuing to plug away at some personal projects that still aren't quite ready to share but I'll touch base on one thing that I've been working on during the past couple of weeks: catching up on [#RecreationThursday prompts](https://github.com/sharlagelfand/RecreationThursday). In the next couple of weeks, I'll have more to share but for now just enjoy some pretty colors :D
+
+## Odita 2008 Recreation
+
+Before starting Recurse Center, I knew I wanted to use this time to play in JavaScript more. Specifically, I wanted to finally figure out how to recreate my favorite #RecreationThursday piece that both excited and intimidated me the moment I saw it: *Phantom's Shadow* (2008) by Nigerian-American abstract painter, Odili Donald Odita.
+
+![Odili Donald Odita, Phantom's Shadow (2008)](image.jpg){fig.alt="An acrylic on canvas painting of composed of deconstructed triangles on a gray background. Across the painting are right triangles whose hypotenuse are jagged. Each triangle is in various colors of teal, orange, salmon and blue. Each triangle is randomly rotated 90, 180, or 270 degrees causing the triangles to give a tiled appearance across the painting." fig.align="center"}
+
+While this may look fairly straightforward to recreate with code (a grid of shapes, rotated and colored according to their position), it forced me to learn more about how to use classes and constructors in JavaScript to draw shapes programmatically (shout out to Ahmad Moussa for [this amazing tutorial](https://gorillasun.de/blog/Sketch-from-Scratch-1-Colorful-checkerboard-in-P5JS) on this topic). Once I got the grid layout working correctly though, I learned that rotating shapes in `p5.js` is, well, a bit confusing. Turns out that by default, shapes will rotate around the origin of the sketch (the upper left hand corner) rather than from their center (Coding Train yet again came to the rescue with a [great video explanation](https://www.youtube.com/watch?v=o9sgjuh-CBM) of this). After a whole lot of trial and error, I finally got it working by making sure I (1) drew the shape by referencing the points from the origin and (2) translating the shape to the proper x-y location before rotating. For my own little take on the piece, I simply added `+ frameCount` to the `rotate()` call to make the shapes spin... I think the end result is quite pleasing if I do say so myself! Kind of reminds me of my colorguard days (if you don't know what colorguard is, do yourself a favor and check out [David Byrne's Contemporary Color](https://www.youtube.com/watch?v=0l364FyVc6I)... that dude GETS IT).
+
+If you want to play with the code yourself, feel free to toy with [my code in the p5 web editor](https://editor.p5js.org/natalieoshea/sketches/qMaHwrMub) \<3
+
+```{r, echo=FALSE}
+# import JavaScript libraries
+htmltools::tagList(
+  htmltools::tags$script(src = "https://cdn.jsdelivr.net/npm/p5@1.3.0/lib/p5.js"),
+  htmltools::tags$script(src = "https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js")
+)
+```
+
+```{js, class.source = "mySketch"}
+// create the div that the figure will be rendered in
+$('<div id="sketch"></div>').insertBefore(".mySketch");
+
+// set canvas dimensions
+let canvasWidth = 800;
+let canvasHeight = 800;
+let shapesPerSide = 8;
+
+// save list of colors
+var colorList = [
+  ["#ffac00", "#008a97", "#ffac00", "#0052ae", "#008a97", "#f8856c", "#008a97", "#ffac00"],
+  ["#0052ae", "#f8856c", "#008a97", "#f8856c", "#ffac00", "#0052ae", "#f8856c", "#0052ae"],
+  ["#008a97", "#ffac00", "#f8856c", "#0052ae", "#f8856c", "#008a97", "#0052ae", "#ffac00"],
+  ["#f8856c", "#0052ae", "#008a97", "#ffac00", "#0052ae", "#ffac00", "#f8856c", "#008a97"],
+  ["#0052ae", "#ffac00", "#0052ae", "#f8856c", "#ffac00", "#008a97", "#ffac00", "#0052ae"],
+  ["#f8856c", "#008a97", "#ffac00", "#008a97", "#0052ae", "#f8856c", "#008a97", "#f8856c"],
+  ["#ffac00", "#0052ae", "#008a97", "#f8856c", "#008a97", "#ffac00", "#f8856c", "#0052ae"],
+  ["#008a97", "#f8856c", "#ffac00", "#0052ae", "#f8856c", "#0052ae", "#008a97", "#ffac00"]
+]
+
+// save list of colors
+var angleList = [
+  [0, 90, 180, 270, 180, 270, 0, 90],
+  [270, 180, 90, 0, 90, 0, 270, 180],
+  [180, 270, 0, 90, 0, 90, 180, 270],
+  [90, 0, 270, 180, 270, 180, 90, 0],
+  [180, 270, 0, 90, 0, 90, 180, 270],
+  [90, 0, 270, 180, 270, 180, 90, 0],
+  [0, 90, 180, 270, 180, 270, 0, 90],
+  [270, 180, 90, 0, 90, 0, 270, 180],
+]
+
+class Shape {
+  constructor(px, py, sw, row, column) {
+    this.positionX = px;
+    this.positionY = py;
+    this.shapeWidth= sw;
+    this.c = colorList[row][column];
+    this.angle = angleList[row][column];
+  }
+
+  display() {
+    // shape parameters
+    // points need to be relative to origin for rotate to work properly
+    let x1 = 0 - (this.shapeWidth / 2);
+    let y1 = 0 - (this.shapeWidth / 2);
+    let x2 = 0 - (this.shapeWidth / 2);
+    let y2 = 0 + (this.shapeWidth / 2);
+    let x3 = 0 + (this.shapeWidth / 2);
+    let y3 = 0 + (this.shapeWidth / 2);
+    let x4 = 0 + (this.shapeWidth * 0.15);
+    let y4 = 0 - (this.shapeWidth * 0.2);
+    
+    // shape color
+    stroke(this.c);
+    fill(this.c);
+    
+    // draw shape
+    push();
+    translate(this.positionX, this.positionY);
+    rotate(this.angle + frameCount);
+    quad(x1, y1, x2, y2, x3, y3, x4, y4);
+    pop();
+    
+  }
+}
+
+class ShapeGrid {
+  constructor() {
+    this.shapes = [];
+    this.gridSize = shapesPerSide;
+    this.shapesize = (canvasWidth/this.gridSize) * 1.0;
+    this.spacing = this.shapesize * 1.0;
+    this.positionX = width / 2 - ((this.gridSize - 1) * this.spacing) / 2;
+    this.positionY = height / 2 - ((this.gridSize - 1) * this.spacing) / 2;
+
+    for (let i = 0; i < this.gridSize; i++) {
+      let row = [];
+      for (let j = 0; j < this.gridSize; j++) {
+        row.push(
+          new Shape(
+            this.positionX + this.spacing * i,
+            this.positionY + this.spacing * j,
+            this.shapesize,
+            j,
+            i
+          )
+        );
+      }
+      this.shapes.push(row);
+    }
+  }
+
+  display() {
+    for (let i = 0; i < this.gridSize; i++) {
+      for (let j = 0; j < this.gridSize; j++) {
+        this.shapes[i][j].display();
+      }
+    }
+  }
+}
+
+// set up background canvas
+function setup() {
+  let canvas = createCanvas(canvasWidth, canvasHeight);
+  // move the canvas inside our <div>
+  canvas.parent('sketch');
+  angleMode(DEGREES);
+  grid = new ShapeGrid();
+}
+
+// draw shapes
+function draw() {
+  background(149, 151, 138);
+  grid.display();
+}
+```

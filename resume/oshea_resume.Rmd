@@ -1,0 +1,152 @@
+---
+title: "Natalie O'Shea's resume"
+author: Natalie O'Shea
+date: "`r Sys.Date()`"
+output:
+  pagedown::html_resume:
+    self_contained: false
+knit: pagedown::chrome_print
+---
+
+Aside
+================================================================================
+
+
+Contact Info {#contact}
+--------------------------------------------------------------------------------
+
+- <i class="fa fa-envelope"></i> ms.natalieoshea@gmail.com
+- <i class="fa fa-github"></i> [github.com/natalieoshea](https://github.com/natalieoshea)
+- <i class="fa-brands fa-linkedin"></i> [linkedin.com/in/natalie-oshea](https://www.linkedin.com/in/natalie-oshea/)
+- <i class="fa-brands fa-mastodon"></i> [@_natalie_oshea](https://fosstodon.org/@_natalie_oshea)
+- <i class="fa-solid fa-globe"></i> [Personal Website](https://natalieoshea.github.io/website/)
+
+Skills {#skills}
+--------------------------------------------------------------------------------
+
+#### Programming
+
+- R · Shiny · Python · SQL · JavaScript · HTML/CSS
+
+#### Research
+
+- Data collection · Statistical modeling · Literature review
+
+#### Project Management
+
+- GitHub · Agile · JIRA · Confluence
+
+#### Other
+
+- Consulting · Communication · Cross-functional collaboration
+
+
+Main
+================================================================================
+
+Natalie O'Shea {#title}
+--------------------------------------------------------------------------------
+
+
+Work Experience {data-icon=suitcase}
+--------------------------------------------------------------------------------
+
+### Analytics Consultant
+
+BetterUp
+
+Remote
+
+2022-Present
+
+- Lead developer of a production-quality Shiny app that automates the generation of business review decks populated with data insights and professional-grade visualizations (estimated base $1.15M annual time cost savings for the sales team)
+- Consulting on data architecture decisions that heavily influence the scalability of our unique data insights on individual and organizational transformation for members and partners
+- Led a cross-functional procurement effort to standardize the tooling used by R and Python users across the organization and streamline the sharing of custom data products with less technical stakeholders to ensure data-informed decision-making internally and for our partner organizations
+- Cultivated an inclusive community of practice for R developers that fosters interdepartmental collaboration
+
+### Data Visualization Analyst
+
+Edmentum
+
+Remote
+
+2021
+
+- Created custom visualizations (R/ggplot2, Adobe Illustrator) to increase the impact of our research and help communicate complex topics to multiple audiences with varying levels of specialized knowledge (layperson to expert)
+- Cultivated spaces for meaningful interdepartmental dialogue and collaboration to ensure human-centered design of data products produced by research team
+- Collaborated with team members across research, data science, software engineering, and UI/UX design on in-product data visualizations that are used by thousands of educators and administrators across the country
+- Developed data visualization style guide to ensure consistency and brand coherence in research communications
+- Developed PowerBI dashboards with automated deployment pipeline (CI/CD)
+- Experience with cloud computing (AWS, Databricks, sparklyR) and a scaled agile workflow
+
+### Data Visualization Specialist
+
+NYC Health + Hospitals (Test and Trace Corps)
+
+New York, NY
+
+2020-2021
+
+- Performed spatial analyses on COVID-19 testing accessibility and capacity to help inform an equitable testing resource deployment strategy for New York City's pandemic response
+- Developed data visualization pipelines and reports with high-quality graphics as part of the Data and Product Team for NYC's COVID-19 Test and Trace Corps
+
+### Community Outreach Data Analyst
+
+NYC Census 2020
+
+New York, NY
+
+2020
+
+- Lead developer of an internal data dashboard (using R, Shiny, and Leaflet) used to track and map census response rates and outreach efforts (texting, phone-banking, and in-person field outreach initiatives) across the city
+- Developed statistical models to evaluate the effectiveness of our outreach efforts using US Census Bureau, VAN, Hustle, and ad vendor data
+- Generated weekly interactive reports to present to internal and external stakeholders
+
+### Digital Fellow
+
+GC Digital Initiatives
+
+New York, NY
+
+2019-2020
+
+- Lead fellow for the Data for Public Good project, a public-interest data science
+collaboration among an interdisciplinary group of graduate students
+- Taught R workshops on data wrangling and visualization
+- Co-developer of the workr package, which houses interactive tutorials of the R
+workshops taught at the Graduate Center
+
+Education {data-icon=graduation-cap data-concise=true}
+--------------------------------------------------------------------------------
+
+### The Recurse Center
+
+Self-Directed Coding Retreat (#NeverGraduate)
+
+New York, NY
+
+2022
+
+### The Graduate Center, CUNY
+
+PhD (ABD) in Biological Anthropology
+
+New York, NY
+
+2020
+
+### The Graduate Center, CUNY
+
+MPhil in Biological Anthropology
+
+New York, NY
+
+2018
+
+### University of Iowa
+
+BS in Anthropology
+
+Iowa City, IA
+
+2014

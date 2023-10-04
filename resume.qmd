@@ -2,4 +2,4 @@
 title: ""
 ---
 
-![](oshea_resume.pdf){width="780px" height="1045px"}
+![](resume/oshea_resume.pdf){width="780px" height="1045px"}

@@ -42,7 +42,7 @@ knit: pagedown::chrome_print
 
 ## Work Experience {data-icon="suitcase"}
 
-### Senior Analytics Consultant
+### Senior Data Scientist
 
 BetterUp
 
